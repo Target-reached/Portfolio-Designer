@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+.portfolio-box {
+    color: white;
+    font-family: roboto;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    padding: 25px;
+    min-height: 100vh;
+    overflow-y: auto;
+    background: linear-gradient(135deg, rgb(17, 17, 71), rgb(6, 7, 7), rgb(16, 6, 17));
+}
+
+.header-box {
+    margin: none;
+    padding: 20px;
+    margin-bottom: 0px;
+}
+
+#header-hdng {
+    background: linear-gradient(165deg, rgb(166, 242, 252), rgb(246, 97, 246), rgb(247, 103, 250));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.hero-section {
+    margin-top: 30px;
+    padding: 20px;
+    min-height: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px skyblue;
+    background: linear-gradient(135deg, rgb(38, 38, 39), rgb(14, 14, 22), rgb(8, 8, 8));
+    color: rgb(206, 209, 211);
+}
+
+.idnty-info {
+    max-width: 500px;
+    text-overflow: auto;
+    line-break: auto;
+    word-break: break-all;
+    padding: 20px;
+    border: none;
+}
+
+.idnty-info>p {
+    font-size: 1rem;
+    line-height: 25px;
+}
+
+.user-name {
+    font-weight: bolder;
+    background: linear-gradient(135deg, rgb(247, 147, 247), rgb(135, 246, 254), rgb(245, 245, 241));
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.user-aim {
+    font-weight: bolder;
+    background: linear-gradient(135deg, rgb(147, 247, 169), rgb(252, 135, 254), rgb(245, 245, 241));
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.user-name,
+.user-aim {
+    margin-left: 5px;
+    font-size: 2rem;
+}
+
+.slash {
+    font-size: 3rem;
+    margin-left: 5px;
+}
+
+.user-vision {
+    font-size: 1.3rem;
+    word-break: keep-all;
+    word-wrap: break-word;
+    line-break: break-all;
+
+}
+
+.user-pto {
+    border: none;
+    border-radius: 15px;
+
+}
+
+.vision-img {
+    height: 200px;
+    width: 300px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px rgb(177, 247, 250);
+}
+
+.prfsnal-links {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    margin-top: 20px;
+    border-radius: 15px;
+    width: max-content;
+    word-break: break-all;
+    line-break: auto;
+    gap: 30px;
+    opacity: 0;
+    box-shadow: 0px 0px 5px aqua;
+    background: linear-gradient(135deg, rgb(246, 176, 246), rgb(253, 250, 250), rgb(3, 122, 1));
+
+
+}
+
+.prfsnal-links>div {
+    height: 30px;
+    width: 30px;
+
+}
+
+.link-img {
+    height: 28px;
+    width: 30px;
+    transition: all 0.5s ease;
+}
+
+.link-img:hover {
+    transform: translateY(5px);
+}
+
+
+.sklls-hdng {
+    text-align: center;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    column-gap: 20px;
+    gap: 50px;
+    width: 100%;
+    background-color: rgb(69, 51, 74);
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.skills-card {
+    padding: 15px;
+    background-color: rgb(11, 11, 11);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    color: rgb(143, 143, 254);
+}
+
+.skill-ctgry {
+    font-size: 1.2rem;
+    text-align: center;
+    color: rgb(251, 205, 205);
+}
+
+.skills-card ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.skills-card ul li {
+    list-style-type: circle;
+    margin-left: 20px;
+}
+
+.projects-container {
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+    overflow-x: auto;
+    background-color: rgb(7, 7, 7);
+    border-radius: 15px;
+}
+
+.prjct-crd {
+    padding: 25px;
+    min-width: 250px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(62, 41, 106);
+    line-break: break-all;
+    word-break: break-all;
+    gap: 15px;
+    font-size: 0.8rem;
+    cursor: pointer;
+
+}
+
+
+.prjct-crd a {
+    text-decoration: none;
+    color: rgb(254, 196, 196);
+    background-color: black;
+    padding: 10px;
+
+}
+
+
+.prjct-crd a p {
+    border: 1px solid;
+    border-radius: 15px;
+    text-align: center;
+
+}
+
+.prjct-ttl-box>p {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: black;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: rgb(233, 180, 36);
+    box-shadow: 0px 0px 5px white;
+
+}
+
+.prjct-info-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: rgb(255, 216, 171);
+    letter-spacing: 1px;
+}
+
+.prjct-info-box a {
+    border-radius: 15px;
+
+}
+
+.hdng {
+    color: rgb(165, 210, 250);
+    text-align: center;
+    letter-spacing: 1.2px;
+}
+
+.experience-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    border-radius: 15px;
+    background: rgb(40, 47, 71);
+    align-items: center;
+    padding: 30px;
+}
+
+.exprnce-card {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 150px;
+    border-radius: 15px;
+    background-color: rgb(108, 5, 106);
+}
+
+.cmpny-tle {
+    color: red;
+}
+
+.education-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    border-radius: 15px;
+    background-color: rgb(8, 81, 84);
+    padding: 30px;
+}
+
+.edcsn-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    align-items: center;
+    gap: 8px;
+    padding: 20px;
+    width: 200px;
+    background-color: black;
+    color: rgb(228, 173, 105);
+
+}
+
+.certification-container {
+    display: flex;
+    gap: 50px;
+    overflow-x: auto;
+    justify-content: space-evenly;
+    background-color: rgb(36, 19, 52);
+    border-radius: 15px;
+    align-items: center;
+    padding: 30px;
+}
+
+.certificate-card {
+    min-width: 250px;
+    background-color: rgb(8, 8, 8);
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 5px;
+    padding: 15px 20px;
+    font-style: italic;
+    color: rgb(189, 155, 253);
+    border-radius: 15px;
+}
+
+
+
+.achivements-container {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(5, 1, 49);
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.achvmnt-card {
+    color: bisque;
+    box-shadow: 0px 0px 5px;
+    min-height: 100px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 115px;
+    text-align: center;
+    background-color: rgb(6, 6, 5);
+    font-style: italic;
+}
+
+
+@media screen and (min-width:427px) and (max-width:787px) {
+    .portfolio-box {
+        width: 100%;
+    }
+
+    .user-name {
+        font-size: 1.3rem;
+    }
+
+    .user-aim {
+        font-size: 1.3rem;
+    }
+
+    .user-vision {
+        font-size: 1rem;
+    }
+
+    .vision-img {
+        width: 250px;
+        margin-right: 10px;
+
+    }
+
+    .hero-section {
+        border: 1px solid white;
+        padding: 10px;
+        justify-content: space-between;
+    }
+
+    .idnty-info>div {
+        padding: 10px;
+    }
+
+    .preview-page {
+        width: 100%;
+    }
+
+    .experience-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 10px;
+        row-gap: 10px;
+        height: 300px;
+        overflow-y: auto;
+
+    }
+
+    .exprnce-card {
+        text-align: center;
+    }
+
+    .education-container {
+        height: 200px;
+        overflow-x: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .achivements-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        height: 150px;
+        overflow-y: auto;
+    }
+
+
+}
+
+@media screen and (max-width:426px) {
+    .portfolio-box {
+        width: 100%;
+        min-height: 100vh;
+        padding: 10px
+    }
+
+    .idnty-info>p {
+        line-height: normal;
+    }
+
+    .user-name {
+        font-size: 1rem;
+    }
+
+    .user-aim {
+        font-size: 1.3rem;
+
+    }
+
+    .user-vision {
+        font-size: 1rem;
+    }
+
+    .slash {
+        font-size: 1.5rem;
+    }
+
+    .vision-img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+
+    .hero-section {
+        width: 100%;
+        flex-direction: column-reverse;
+        border: 1px solid white;
+        padding: 10px;
+        justify-content: space-between;
+    }
+
+    .idnty-info>div {
+        padding: 10px;
+    }
+
+    .skills-container {
+        padding: 20px 5px;
+        width: 100%;
+        grid-template-rows: repeat(1, 1fr);
+        gap: 5px;
+        overflow-x: auto;
+        box-sizing: border-box;
+        justify-content: space-evenly;
+
+    }
+
+    .skills-card {
+        width: 290px;
+        margin: auto;
+    }
+
+    .experience-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 10px;
+        row-gap: 10px;
+        height: 200px;
+        overflow-y: auto;
+
+    }
+
+    .exprnce-card {
+        text-align: center;
+    }
+
+    .education-container {
+        height: 200px;
+        overflow-x: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .certification-container {
+        height: 200px;
+        display: flex;
+
+        overflow-x: auto;
+    }
+
+    .certificate-card {
+        width: max-content;
+    }
+
+    .achivements-container {
+        display: flex;
+        flex-wrap: nowrap;
+        grid-template-rows: repeat(2,1fr);
+        overflow-x: auto;
+        justify-content: space-around;
+    }
+    .achvmnt-card{
+        box-sizing: border-box;
+        padding: 10px;
+        min-width: 250px;
+        border-radius: 20px;
+    }
+}

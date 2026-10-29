@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/Logos/site-logo.png">
+    <script src="script.js" defer></script>
+    <script src="export.js" defer></script>
+    <title>GENISIS</title>
+</head>
+
+<body>
+    <div class="whole-container">
+        <div class="site-info-box">
+            <div class="site-name-info-box">
+                <h2 id="site-ttle">GENISIS</h2>
+                <p id="site-vsn">portfolio architect</p>
+            </div>
+        </div>
+        <div class="site-functionality-div">
+            <section class="preview-page">
+                <div class="site-actions">
+                    <div class="portfolio-operations">
+                        <button id="clear-data">Clear Entries</button>
+                        <button id="download-portfolio">Download</button>
+                        <button id="publish-site">Publish</button>
+                    </div>
+                    <p class="site-vision">- auto upadating site</p>
+                </div>
+                <div class="portfolio-box">
+                    <h1 class="p-hdng"><span class="slash">|</span>My Portfolio...</h1>
+                    <div class="hero-section">
+                        <div class="idnty-info">
+                            <p>Hi,<br><br><span class="user-name">{ your Name here }</span><br><br>
+                                Future <span class="user-aim">{ Your Role Here }</span><br><br>
+                                <span class="user-vision">Skills For Creating,<br>
+                                    Better Solutions Tomorrow.</span>
+                            </p>
+                            <div class="prfsnal-links">
+                                <div class="lnk1"></div>
+                                <div class="lnk2"></div>
+                                <div class="lnk3"></div>
+                                <div class="lnk4"></div>
+                            </div>
+                        </div>
+                        <div class="user-pto">
+                            <img src="assets/Images/vision-img.png" class="vision-img">
+                        </div>
+
+                    </div>
+                    <h3 class="sklls-hdng">Skills</h3>
+                    <div class="skills-container">
+
+                    </div>
+                    <h3 class="sklls-hdng">Projects</h3>
+                    <div class="projects-container">
+
+                    </div>
+                    <h3 class="sklls-hdng">Experience</h3>
+                    <div class="experience-container">
+
+                    </div>
+                    <h3 class="sklls-hdng">Education</h3>
+                    <div class="education-container">
+
+                    </div>
+                    <h3 class="sklls-hdng">Certifications</h3>
+                    <div class="certification-container">
+
+                    </div>
+                    <h3 class="sklls-hdng">Achievments</h3>
+                    <div class="achivements-container">
+
+                    </div>
+
+                </div>
+
+
+
+            </section>
+            <section class="user-bio-page">
+                <div class="usr-idnty-box">Your identity
+                    <hr>
+                    <p>Enter Your Name : </p>
+                    <input type="text" name="user-name" id="user-name-inp">
+                    <p>Enter Your Portfoilo's Role : </p>
+                    <input type="text" name="user-role" id="user-role-inp">
+                    <p>Enter a small line about your vision : </p>
+                    <input type="text" name="vision" id="user-vision-inp">
+                    <button class="sv-info">save</button>
+                </div>
+                <div class="prfsnl-links">Your Professional Links
+                    <hr>
+                    <p>Your Linkdin Profile Link : </p>
+                    <input placeholder="only pasting allowed!" name="linkdin" type="text" id="linkdin">
+                    <p>Your Github Profile Link : </p>
+                    <input placeholder="only pasting allowed!" name="github" type="text" id="github">
+                    <p>Your Instagram Profile Link : </p>
+                    <input placeholder="only pasting allowed!" name="insta" type="text" id="instagram">
+                    <p>Your Mail id : </p>
+                    <input placeholder="only pasting allowed!" name="mail" type="text" id="mail">
+                    <button class="sv-lnks">save</button>
+                </div>
+                <div class="sklls-infoBox">Skills-Info
+                    <hr>
+                    <div class="sklls-info"></div>
+                    <button class="skl-addr">add Category</button>
+                    <div class="sv-btn">
+                        <button class="sv-sklls">update Data</button>
+                    </div>
+                </div>
+                <div class="prjcs-info">Projects Info
+                    <hr>
+                    <div class="prjcts-box">
+
+
+
+                    </div>
+                    <button class="add-prjcts">add Projects</button>
+                    <button class="sv-prjcts">save</button>
+                </div>
+                <div class="exprnce-info">Experience Info
+                    <hr>
+                    <div class="exprnce-container">
+
+                    </div>
+                    <button class="add-exprnce">add experience</button>
+                    <button class="sv-exprnce">save</button>
+                </div>
+                <div class="edcsnS-info">Education info
+                    <hr>
+                    <div class="edcsn-prmpt-bx hidden">
+                        <p>Enter Qualification : </p>
+                        <input type="text" placeholder="ex - B Tech" id="dgre-nme-inp">
+                        <p>Enter College / University name: </p>
+                        <input type="text" placeholder="ex - Joy University" id="cllge-nme-inp">
+                        <p>Enter marks / percentage / CGPA: </p>
+                        <input type="number" placeholder="ex - 9.86" id="cgpa-inp">
+                    </div>
+                    <button class="add-edcsn">add education</button>
+                    <button class="sv-edcsn">save</button>
+                </div>
+                <div class="crtfcts-info">Certifications
+                    <hr>
+                    <div class="crtfcsn-prmpt hidden">
+                        <p>Enter course in which you certified : </p>
+                        <input type="text" placeholder="ex - Python" id="crse-inp">
+                        <p>Certified by : </p>
+                        <input type="text" placeholder="ex - JU-EduTech" id="crtfyd-by">
+                        <p>Enter your certificate id : </p>
+                        <input type="text" placeholder="ex - 2T004AJ2210" id="crtfct-id">
+                    </div>
+                    <button class="add-crtfcsn">add certification</button>
+                    <button class="sv-crtfcts">save</button>
+                </div>
+                <div class="achvmnts-info">Achievments Info
+                    <hr>
+                    <div class="achvmnt-pmpt hidden">
+                        <p>Enter your achievment role : </p>
+                        <input type="text" placeholder="ex - Best Menotor" id="achvmnt-rle">
+                        <p>Eeason for achivement :</p>
+                        <input type="text" placeholder="ex - mentoring students" id="achvmnt-rsn">
+                    </div>
+                    <button class="add-achvment">add achievement</button>
+                    <button class="sv-achvmnts">save</button>
+                </div>
+                <div class="help-desk">
+                    <p class="footer-text">Need Help ?<br>
+                        I'm always open to discussing new<br>
+                        projects, creative ideas, or opportunities<br>
+                        to be part of your vision.<br></p>
+                    <div class="links-dvlpr">
+                        <a href="https://www.linkedin.com/in/talari-jagan-mohan/" target="_blank"><img
+                                src="assets/Logos/linkedin.png" alt="Linkdin"></a>
+                        <a href="https://github.com/Target-reached" target="_blank"><img src="assets/Logos/github.png"
+                                alt="Github"></a>
+                        <a href="https://www.instagram.com/man_of_the_men__8?igsh=MWZnYTk3a3lhbnc0dQ=="
+                            target="_blank"><img src="assets/Logos/instagram.png" alt="Instagram"></a>
+                        <a href="mailto:jai.8.joy@gmail.com?subject=Support%20request" target="_blank"><img
+                                src="assets/Logos/gmail.png" alt="gmail"></a>
+                    </div>
+                    <hr color="red">
+                    <p class="dsnr-info">Designed by Jagan Mohan Talari.<br>2026 front-end Project.</p>
+
+                </div>
+            </section>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,800 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+.whole-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-family: roboto;
+    background-color: rgb(13, 13, 50);
+}
+
+.site-info-box {
+    padding: 15px;
+    height: 100px;
+    background-color: black;
+
+}
+
+#site-ttle {
+    background: linear-gradient(135deg, rgb(249, 143, 62), rgb(253, 216, 179), rgb(245, 245, 241));
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+#site-vsn,
+.p-hdng-- {
+    font-weight: bold;
+    background: linear-gradient(135deg, rgb(247, 147, 247), rgb(250, 175, 62), rgb(151, 246, 253));
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.site-name-info-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.site-functionality-div {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+section {
+    box-shadow: 0px 0px 5px aqua;
+    border-radius: 20px;
+}
+
+.preview-page {
+    padding: 15px;
+    max-height: 95vh;
+    color: white;
+    width: 70%;
+    background: linear-gradient(160deg, rgb(33, 33, 73), rgb(31, 31, 33), rgb(58, 54, 54));
+    overflow-y: auto;
+}
+
+.site-actions {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.site-actions>p {
+    color: rgb(254, 225, 172);
+
+}
+
+.portfolio-operations {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.portfolio-operations>button {
+
+    height: 30px;
+    width: 200px;
+    border: none;
+    background-color: rgb(154, 253, 253);
+    transition: all 0.5s ease;
+    font-family: roboto;
+    border-radius: 20%;
+
+}
+
+.portfolio-operations button:hover {
+    background-color: rgb(28, 122, 137);
+    color: rgb(254, 252, 252);
+    letter-spacing: 1.5px;
+    border-radius: 15px;
+
+}
+
+#clear-data {
+    background-color: rgb(247, 133, 133);
+    transition: all 0.5s ease;
+}
+
+#clear-data:hover {
+    background-color: red;
+}
+
+.portfolio-box {
+    color: white;
+    font-family: roboto;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    padding: 25px;
+    min-height: 100vh;
+    overflow-y: auto;
+    background: linear-gradient(135deg, rgb(17, 17, 71), rgb(6, 7, 7), rgb(16, 6, 17));
+}
+
+.header-box {
+    margin: none;
+    padding: 20px;
+    margin-bottom: 0px;
+
+}
+
+#header-hdng {
+    background: linear-gradient(165deg, rgb(166, 242, 252), rgb(246, 97, 246), rgb(247, 103, 250));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.hero-section {
+    margin-top: 30px;
+    padding: 20px;
+    min-height: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px skyblue;
+    background: linear-gradient(135deg, rgb(38, 38, 39), rgb(14, 14, 22), rgb(8, 8, 8));
+    color: rgb(206, 209, 211);
+}
+
+.idnty-info {
+    max-width: 500px;
+    text-overflow: auto;
+    line-break: auto;
+    word-break: break-all;
+    padding: 20px;
+    border: none;
+}
+
+.idnty-info>p {
+    font-size: 1rem;
+    line-height: 25px;
+}
+
+.user-name {
+    font-weight: bolder;
+    background: linear-gradient(135deg, rgb(247, 147, 247), rgb(135, 246, 254), rgb(245, 245, 241));
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.user-aim {
+    font-weight: bolder;
+    background: linear-gradient(135deg, rgb(147, 247, 169), rgb(252, 135, 254), rgb(245, 245, 241));
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.user-name,
+.user-aim {
+    margin-left: 5px;
+    font-size: 2rem;
+}
+
+.slash {
+    font-size: 3rem;
+    margin-left: 5px;
+}
+
+.user-vision {
+    font-size: 1.3rem;
+    word-break: keep-all;
+    word-wrap: break-word;
+    line-break: break-all;
+
+}
+
+.user-pto {
+    border: none;
+    border-radius: 15px;
+
+}
+
+.vision-img {
+    height: 200px;
+    width: 300px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px rgb(177, 247, 250);
+}
+
+.prfsnal-links {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    margin-top: 20px;
+    border-radius: 15px;
+    width: max-content;
+    word-break: break-all;
+    line-break: auto;
+    gap: 30px;
+    opacity: 0;
+    box-shadow: 0px 0px 5px aqua;
+    background: linear-gradient(135deg, rgb(246, 176, 246), rgb(253, 250, 250), rgb(3, 122, 1));
+
+
+}
+
+.prfsnal-links>div {
+    height: 30px;
+    width: 30px;
+
+}
+
+.link-img {
+    height: 28px;
+    width: 30px;
+    transition: all 0.5s ease;
+}
+
+.link-img:hover {
+    transform: translateY(5px);
+}
+
+.sklls-hdng {
+    text-align: center;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    column-gap: 20px;
+    gap: 50px;
+    width: 100%;
+    background-color: rgb(69, 51, 74);
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.skills-card {
+    padding: 15px;
+    background-color: rgb(11, 11, 11);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    color: rgb(143, 143, 254);
+}
+
+.skill-ctgry {
+    font-size: 1.2rem;
+    text-align: center;
+    color: rgb(251, 205, 205);
+}
+
+.skills-card ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.skills-card ul li {
+    list-style-type: circle;
+    margin-left: 20px;
+}
+
+.projects-container {
+    padding: 35px;
+    display: flex;
+    gap: 50px;
+    width: 100%;
+    overflow-x: auto;
+    background-color: rgb(7, 7, 7);
+    border-radius: 15px;
+}
+
+.prjct-crd {
+    padding: 25px;
+    min-width: 250px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(62, 41, 106);
+    line-break: break-all;
+    word-break: break-all;
+    gap: 15px;
+    font-size: 0.8rem;
+    cursor: pointer;
+
+}
+
+
+.prjct-crd a {
+    text-decoration: none;
+    color: rgb(254, 196, 196);
+    background-color: black;
+    padding: 10px;
+
+}
+
+
+.prjct-crd a p {
+
+    border-radius: 15px;
+
+
+}
+
+.prjct-ttl-box>p {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: black;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: rgb(233, 180, 36);
+    box-shadow: 0px 0px 5px white;
+
+}
+
+.prjct-info-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: rgb(255, 216, 171);
+    letter-spacing: 1px;
+}
+
+.prjct-info-box a {
+    border-radius: 15px;
+
+}
+
+.hdng {
+    color: rgb(165, 210, 250);
+    text-align: center;
+    letter-spacing: 1.2px;
+}
+
+.experience-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    border-radius: 15px;
+    background: rgb(17, 6, 38);
+    align-items: center;
+    padding: 40px;
+}
+
+.exprnce-card {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 150px;
+    border-radius: 15px;
+    background-color: rgb(88, 3, 87);
+    color: rgb(231, 222, 222);
+}
+
+.cmpny-tle {
+    color: rgb(253, 173, 173);
+}
+
+.education-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    border-radius: 15px;
+    background-color: rgb(8, 81, 84);
+    padding: 30px;
+}
+
+.edcsn-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    align-items: center;
+    gap: 8px;
+    padding: 20px;
+    width: 200px;
+    background-color: black;
+    color: rgb(228, 173, 105);
+
+}
+
+.certification-container {
+    display: flex;
+    gap: 50px;
+    overflow-x: auto;
+    background-color: rgb(36, 19, 52);
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.certificate-card {
+    min-width: 250px;
+    background-color: rgb(8, 8, 8);
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 5px;
+    padding: 15px 20px;
+    font-style: italic;
+    color: rgb(189, 155, 253);
+    border-radius: 15px;
+}
+
+
+
+.achivements-container {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(5, 1, 49);
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.achvmnt-card {
+    color: bisque;
+    box-shadow: 0px 0px 5px;
+    min-height: 100px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 115px;
+    text-align: center;
+    background-color: rgb(6, 6, 5);
+    font-style: italic;
+}
+
+.edcsn-prmpt-bx {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.sv-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.sv-edcsn {
+    display: none;
+}
+
+.sv-crtfcts {
+    display: none
+}
+
+.acvmnt-btn {
+    display: none;
+}
+
+.sv-achvmnts {
+    display: none;
+}
+
+
+
+.user-bio-page {
+    max-height: 95vh;
+    width: 30%;
+    padding: 15px;
+    background-color: rgb(16, 13, 44);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: auto;
+
+}
+
+.user-bio-page>div {
+    min-height: 300px;
+    overflow-y: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+    font-size: 1rem;
+    color: rgb(208, 220, 230);
+    border-radius: 15px;
+    background-color: transparent;
+    box-shadow: 0px 0px 5px rgb(254, 173, 254);
+}
+
+.user-bio-page>div div {
+    width: 100%;
+}
+
+.user-bio-page div button {
+    padding: 5px;
+    width: 50%;
+    align-self: center;
+    background-color: rgb(194, 194, 255);
+    border: none;
+    transition: all 0.3s ease;
+
+
+}
+
+.user-bio-page div button:active {
+    background-color: white;
+    color: black;
+
+}
+
+.usr-idnty-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    margin: 5px;
+    padding: 5px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgb(46, 46, 118);
+    color: white;
+    transition: all 0.4s ease;
+
+}
+
+input::placeholder {
+    padding: 5px;
+    color: rgb(162, 140, 100);
+}
+
+input:focus {
+    border-bottom: 1px solid white
+}
+
+.ctgry-box {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}
+
+input::-webkit-outer-spin-button {
+    display: none;
+}
+
+::-webkit-inner-spin-button {
+    display: none;
+}
+
+.help-desk {
+    max-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.help-desk p {
+    color: rgb(227, 227, 93);
+}
+
+.help-desk hr {
+    width: 100%;
+}
+
+.links-dvlpr {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(255, 206, 141);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.links-dvlpr img {
+    height: 30px;
+    width: 25px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.links-dvlpr img:hover {
+    transform: translateY(5px);
+}
+
+.footer-text {
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 23px;
+}
+
+.dsnr-info {
+    color: white !important;
+    text-align: center;
+    line-height: 22px;
+    font-size: 0.8rem;
+}
+
+
+@media screen and (max-width:426px) {
+    .whole-container {
+        min-width: 100vw;
+        border: 1px solid white;
+    }
+
+    .site-functionality-div {
+        padding: 10px;
+        display: flex;
+        flex-direction: column-reverse;
+        min-width: 100%;
+        border: 1px solid white;
+    }
+
+    .portfolio-box {
+        display: none;
+        width: 100%;
+        border: 1px solid white;
+    }
+
+    .preview-page {
+        width: 100%;
+    }
+
+    .user-bio-page {
+        width: 100%;
+    }
+
+    .site-actions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .portfolio-operations {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .site-vision {
+        display: none;
+    }
+}
+
+@media screen and (min-width:427px) and (max-width:787px) {
+    .whole-container {
+        min-width: 100vw;
+        border: 1px solid white;
+    }
+
+    .site-functionality-div {
+        padding: 10px;
+        flex-direction: column-reverse;
+    }
+
+    .portfolio-box {
+        width: 100%;
+        border: 1px solid white;
+
+    }
+
+    .user-name {
+        font-size: 1.3rem;
+    }
+
+    .user-aim {
+        font-size: 1.3rem;
+    }
+
+    .user-vision {
+        font-size: 1rem;
+    }
+
+    .vision-img {
+        width: 250px;
+        margin-right: 10px;
+
+    }
+
+    .hero-section {
+        border: 1px solid white;
+        padding: 10px;
+        justify-content: space-between;
+    }
+
+    .idnty-info>div {
+        padding: 10px;
+    }
+
+    .preview-page {
+        width: 100%;
+    }
+
+    .experience-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+
+    .achivements-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    input {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .user-bio-page {
+        width: 70%;
+        margin: auto;
+        gap: 30px;
+        margin-bottom: 50px;
+
+    }
+
+    .user-bio-page>div {
+        font-size: 1rem;
+    }
+
+    .user-bio-page button {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .portfolio-operations {
+        flex-direction: row;
+        gap: 10px;
+        width: 50%;
+    }
+}
+
+.hidden {
+    display: none;
+}
