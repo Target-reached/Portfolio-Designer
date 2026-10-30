@@ -1,3 +1,4 @@
+
 const userName = document.querySelector('.user-name');
 const getUser_name = document.getElementById("user-name-inp");
 const getUser_idnty = document.getElementById("user-role-inp");
@@ -442,7 +443,7 @@ function projectCardGenerator(userProjects) {
     const projectTitle = document.createElement("p");
     projectTitle.textContent = `Title : ${userProjects.projectTitle}`;
     const projectPurpose = document.createElement("p");
-    projectPurpose.textContent = "Purpose : "+userProjects.projectPurpose;
+    projectPurpose.textContent = "Purpose : " + userProjects.projectPurpose;
     const projectLnk = document.createElement("a");
     projectLnk.href = `${userProjects.projectLink}`;
     projectLnk.target = '_blank';
@@ -450,7 +451,7 @@ function projectCardGenerator(userProjects) {
     const projectLink = document.createElement("p");
     projectLink.textContent = "visit project ↗ ";
     const projectTime = document.createElement("p");
-    projectTime.textContent = "no of days took : "+userProjects.projectCountDays;
+    projectTime.textContent = "no of days took : " + userProjects.projectCountDays;
 
     projectCardTitle.append(projectTitle);
     projectLnk.append(projectLink);
@@ -555,7 +556,7 @@ function expereinceCardCreator(userExperince) {
     exprnceCard.className = 'exprnce-card';
     const cmpnyNamePara = document.createElement("p");
     cmpnyNamePara.textContent = `worked in : ${userExperince.cmpny_name} company`;
-    cmpnyNamePara.className='cmpny-tle';
+    cmpnyNamePara.className = 'cmpny-tle';
     const dsplayExprnce = document.createElement("div");
     dsplayExprnce.textContent = `total experience : ${userExperince.total_exprnce}`;
 
@@ -634,7 +635,7 @@ saveExperienceBtn.onclick = () => {
     setItem("userExperience", userExperience);
     userExperience = getItem("userExperience") || [];
     renderExperienceCards(userExperience);
-    document.querySelector(".exprnce-container").innerHTML='';
+    document.querySelector(".exprnce-container").innerHTML = '';
 
 
 }
@@ -648,7 +649,7 @@ function renderExperienceCards(userExperience) {
         const generateExprnceCard = expereinceCardCreator(each_exprnce);
         document.querySelector(".experience-container").append(generateExprnceCard);
     });
-    
+
     return;
 }
 renderExperienceCards(userExperience);
