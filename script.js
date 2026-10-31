@@ -1,4 +1,3 @@
-
 const userName = document.querySelector('.user-name');
 const getUser_name = document.getElementById("user-name-inp");
 const getUser_idnty = document.getElementById("user-role-inp");
@@ -328,10 +327,6 @@ saveSkills.onclick = () => {
     setItem("userSkills", userSkills);
     userSkills = getItem("userSkills");
 
-    // document.querySelectorAll(".ctgry-box").forEach((each_box) => {
-    //     each_box.remove();
-
-    // });
     renderSkills(userSkills);
 
     return;
@@ -654,22 +649,10 @@ function renderExperienceCards(userExperience) {
 }
 renderExperienceCards(userExperience);
 
-const addEducationBtn = document.querySelector(".add-edcsn");
+
 const saveEducationBtn = document.querySelector(".sv-edcsn");
 
-let educationAdded = false
-addEducationBtn.onclick = () => {
-    educationAdded = true;
-    document.querySelector(".edcsn-prmpt-bx").classList.toggle("hidden");
-    if (addEducationBtn.textContent == 'add education') {
-        addEducationBtn.textContent = 'hide education';
-        document.querySelector(".sv-edcsn").style.display = 'block';
-    } else {
-        addEducationBtn.textContent = 'add education';
-        document.querySelector(".sv-edcsn").style.display = 'none';
-        educationAdded = false
-    }
-}
+
 saveEducationBtn.onclick = () => {
     const getDegreeName = document.getElementById("dgre-nme-inp").value.trim();
     const getCollegeName = document.getElementById("cllge-nme-inp").value.trim();
@@ -734,21 +717,8 @@ function renderEducationcards(userEducation) {
     return;
 }
 
-const addCrtfcsnBtn = document.querySelector(".add-crtfcsn");
 const saveCrtfcsnBtn = document.querySelector(".sv-crtfcts");
-let certificationAdded = false;
-addCrtfcsnBtn.onclick = () => {
-    certificationAdded = true;
-    document.querySelector(".crtfcsn-prmpt").classList.toggle("hidden");
-    if (addCrtfcsnBtn.textContent == 'add certification') {
-        addCrtfcsnBtn.textContent = 'hide certification';
-        document.querySelector(".sv-crtfcts").style.display = 'block';
-    } else {
-        addCrtfcsnBtn.textContent = 'add certification';
-        document.querySelector(".sv-crtfcts").style.display = 'none';
-        certificationAdded = false
-    }
-}
+
 
 saveCrtfcsnBtn.onclick = () => {
     const c_course = document.getElementById("crse-inp").value.trim();
@@ -817,24 +787,8 @@ function renderCertificatecards(userCertification) {
 renderCertificatecards(userCertification);
 const addAchvmntBtn = document.querySelector(".add-achvment");
 const saveAchvmntBtn = document.querySelector(".sv-achvmnts");
-let achievemntAdded = false;
-addAchvmntBtn.onclick = () => {
-    achievemntAdded = true;
-    document.querySelector(".achvmnt-pmpt").classList.toggle("hidden");
-    if (addAchvmntBtn.textContent == 'add achievement') {
-        addAchvmntBtn.textContent = 'hide acheivment';
-        document.querySelector(".sv-achvmnts").style.display = 'block';
 
-    } else {
-        addAchvmntBtn.textContent = 'add achievement';
-        document.querySelector(".sv-achvmnts").style.display = 'none';
-        achievemntAdded = false;
-    }
-}
 saveAchvmntBtn.onclick = () => {
-    if (!achievemntAdded) {
-        return;
-    }
     const getRole = document.getElementById("achvmnt-rle").value.trim();
     const getAchvmntRsn = document.getElementById("achvmnt-rsn").value.trim();
 
@@ -911,11 +865,3 @@ document.getElementById("clear-data").onclick = () => {
     window.location.reload();
 }
 
-const ClickableBtns = ["skl-addr", "add-prjcts", "add-exprnce", "add-edcsn", "add-crtfcsn", "add-achvment"];
-function clickBtns() {
-    ClickableBtns.forEach((eachBtn) => {
-        document.querySelector(`.${eachBtn}`).click()
-    });
-    return;
-}
-clickBtns();
