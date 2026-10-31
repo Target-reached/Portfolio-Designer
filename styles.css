@@ -283,9 +283,10 @@ section {
 }
 
 .skills-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     column-gap: 20px;
     gap: 50px;
     width: 100%;
@@ -397,18 +398,16 @@ section {
 
 .experience-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-content: center;
-    align-items: center;
+    grid-auto-flow: column;
+    overflow-x: auto;
     gap: 50px;
-    width: 100%;
     border-radius: 15px;
     background: rgb(17, 6, 38);
-    align-items: center;
     padding: 40px;
 }
 
 .exprnce-card {
+    width: max-content;
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -424,9 +423,9 @@ section {
 }
 
 .education-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display:grid;
+    grid-auto-flow: column;
+    overflow-x: auto;
     gap: 30px;
     border-radius: 15px;
     background-color: rgb(8, 81, 84);
@@ -472,26 +471,26 @@ section {
 
 
 .achivements-container {
-
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-auto-flow: column;
+    overflow-x: auto;
     gap: 30px;
-    align-items: center;
-    justify-content: space-around;
     background-color: rgb(5, 1, 49);
     border-radius: 15px;
     padding: 30px;
+    height: 250px;
 }
 
 .achvmnt-card {
+    width: max-content;
     color: bisque;
     box-shadow: 0px 0px 5px;
     min-height: 100px;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    border-radius: 115px;
+    justify-content: space-evenly;
+    border-radius: 30%;
     text-align: center;
     background-color: rgb(6, 6, 5);
     font-style: italic;
@@ -509,7 +508,7 @@ section {
     justify-content: center;
 }
 
-.sv-edcsn {
+/* .sv-edcsn {
     display: none;
 }
 
@@ -523,7 +522,7 @@ section {
 
 .sv-achvmnts {
     display: none;
-}
+} */
 
 
 
