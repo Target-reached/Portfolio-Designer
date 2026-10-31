@@ -25,7 +25,7 @@
 
 .header-box {
     margin: none;
-    padding: 20px;
+    padding: 10px;
     margin-bottom: 0px;
 }
 
@@ -408,37 +408,75 @@
         padding: 10px;
     }
 
-    .preview-page {
+    .skills-container {
+        padding: 20px 10px;
         width: 100%;
+        grid-auto-flow: column;
+        gap: 5px;
+        overflow-x: auto;
+        box-sizing: border-box;
+        justify-content: space-evenly;
+
+    }
+
+    .skills-card {
+        width: max-content;
+        margin: auto;
+    }
+
+    .projects-container {
+        display: flex;
+        justify-content: space-around;
+
     }
 
     .experience-container {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        column-gap: 10px;
-        row-gap: 10px;
-        height: 300px;
+        display: flex;
+        justify-content: space-evenly;
+        height: 200px;
         overflow-y: auto;
 
     }
 
     .exprnce-card {
-        text-align: center;
+        min-width: max-content;
+
     }
 
     .education-container {
         height: 200px;
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-rows: repeat(1, 1fr);
         overflow-x: auto;
-        display: flex;
-        justify-content: space-around;
+    }
+
+    .certification-container {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    .certificate-card {
+        width: max-content;
     }
 
     .achivements-container {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        height: 150px;
-        overflow-y: auto;
+        display: flex;
+        flex-wrap: nowrap;
+        grid-template-rows: repeat(2, 1fr);
+        overflow-x: auto;
+        justify-content: space-around;
     }
+
+    .achvmnt-card {
+        box-sizing: border-box;
+        padding: 10px;
+        min-width: 250px;
+        border-radius: 20px;
+    }
+
+
 
 
 }
@@ -447,7 +485,7 @@
     .portfolio-box {
         width: 100%;
         min-height: 100vh;
-        padding: 10px
+        padding: 5px;
     }
 
     .idnty-info>p {
@@ -456,6 +494,7 @@
 
     .user-name {
         font-size: 1rem;
+
     }
 
     .user-aim {
@@ -485,14 +524,11 @@
         justify-content: space-between;
     }
 
-    .idnty-info>div {
-        padding: 10px;
-    }
 
     .skills-container {
-        padding: 20px 5px;
+        padding: 20px 10px;
         width: 100%;
-        grid-template-rows: repeat(1, 1fr);
+        grid-auto-flow: column;
         gap: 5px;
         overflow-x: auto;
         box-sizing: border-box;
@@ -501,36 +537,41 @@
     }
 
     .skills-card {
-        width: 290px;
+        width: max-content;
         margin: auto;
     }
 
+    .projects-container {
+        display: flex;
+        justify-content: space-around;
+
+    }
+
     .experience-container {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        column-gap: 10px;
-        row-gap: 10px;
+        display: flex;
+        justify-content: space-evenly;
         height: 200px;
         overflow-y: auto;
 
     }
 
     .exprnce-card {
-        text-align: center;
+        min-width: max-content;
+
     }
 
     .education-container {
         height: 200px;
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-rows: repeat(1, 1fr);
         overflow-x: auto;
-        display: flex;
-        justify-content: space-around;
     }
 
     .certification-container {
-        height: 200px;
-        display: flex;
-
-        overflow-x: auto;
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-rows: repeat(1, 1fr);
     }
 
     .certificate-card {
@@ -540,11 +581,12 @@
     .achivements-container {
         display: flex;
         flex-wrap: nowrap;
-        grid-template-rows: repeat(2,1fr);
+        grid-template-rows: repeat(2, 1fr);
         overflow-x: auto;
         justify-content: space-around;
     }
-    .achvmnt-card{
+
+    .achvmnt-card {
         box-sizing: border-box;
         padding: 10px;
         min-width: 250px;
