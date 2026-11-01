@@ -617,7 +617,7 @@ saveExperienceBtn.onclick = () => {
         ey--;
         em += 12;
     }
-    const totalExprnce = `(${ey} year (s) ${em} months ${ed} day (s))`.replaceAll("-", '');
+    const totalExprnce = `${ey} year (s) ${em} months ${ed} day (s)`.replaceAll("-", '');
 
     const newExprnceObject = {
         cmpny_name: getCmpnyName,
