@@ -4,6 +4,9 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+      word-break: normal;
+      overflow-wrap: normal;
+      text-wrap: pretty;
 
 }
 
