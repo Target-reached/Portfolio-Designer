@@ -4,9 +4,6 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-      word-break: normal;
-      overflow-wrap: normal;
-      text-wrap: pretty;
 
 }
 
@@ -110,8 +107,6 @@ section {
 
 .portfolio-operations>button {
 
-    height: 30px;
-    width: 200px;
     border: none;
     background-color: rgb(16, 17, 17);
     transition: all 0.5s ease;
@@ -119,14 +114,14 @@ section {
     border-radius: 20%;
     box-shadow: 0px 0px 10px rgb(178, 178, 252);
     color: white;
+    padding: 10px 15px;
 
 }
 
 .portfolio-operations button:hover {
     background-color: rgb(28, 4, 149);
     color: rgb(254, 252, 252);
-    letter-spacing: 1.5px;
-    border-radius: 15px;
+    transform: scale(1.2);
 
 }
 
@@ -288,7 +283,7 @@ section {
 .skills-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     column-gap: 20px;
     gap: 50px;
@@ -329,6 +324,7 @@ section {
 .projects-container {
     padding: 35px;
     display: flex;
+    justify-content: space-around;
     gap: 50px;
     width: 100%;
     overflow-x: auto;
@@ -402,6 +398,7 @@ section {
 .experience-container {
     display: grid;
     grid-auto-flow: column;
+    justify-content: space-around;
     overflow-x: auto;
     gap: 50px;
     border-radius: 15px;
@@ -428,6 +425,7 @@ section {
 .education-container {
     display:grid;
     grid-auto-flow: column;
+    justify-content: space-around;
     overflow-x: auto;
     gap: 30px;
     border-radius: 15px;
@@ -450,6 +448,7 @@ section {
 
 .certification-container {
     display: flex;
+    justify-content: space-around;
     gap: 50px;
     overflow-x: auto;
     background-color: rgb(36, 19, 52);
@@ -476,6 +475,7 @@ section {
 .achivements-container {
     display: grid;
     grid-auto-flow: column;
+    justify-content: space-around;
     overflow-x: auto;
     gap: 30px;
     background-color: rgb(5, 1, 49);
@@ -670,7 +670,14 @@ input::-webkit-outer-spin-button {
     line-height: 22px;
     font-size: 0.8rem;
 }
-
+.skills-container,
+.projects-container,
+.experience-container,
+.education-container,
+.certification-container,
+.achivements-container {
+    box-shadow: 0px 0px 6px rgb(136, 255, 201);
+}
 
 @media screen and (max-width:426px) {
     .whole-container {
@@ -715,6 +722,15 @@ input::-webkit-outer-spin-button {
 
     .site-vision {
         display: none;
+    }
+    .skills-container,.projects-container,.experience-container,.education-container,.certification-container,.achivements-container{
+        display: grid;
+        grid-auto-flow: column;
+        overflow-x: auto;
+        justify-content: space-around;
+    }
+    .skills-container{
+        justify-content: space-around;
     }
 }
 
@@ -767,12 +783,6 @@ input::-webkit-outer-spin-button {
         width: 100%;
     }
 
-    .experience-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 10px;
-        row-gap: 10px;
-    }
 
     .achivements-container {
         display: grid;
