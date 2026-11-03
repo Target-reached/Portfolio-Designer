@@ -10,7 +10,9 @@
 *::-webkit-scrollbar {
     display: none;
 }
-
+p{
+    overflow-wrap:break-word;
+}
 .whole-container {
     min-height: 100vh;
     display: flex;
