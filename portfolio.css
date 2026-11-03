@@ -225,14 +225,13 @@
 
 .prjct-crd {
     padding: 25px;
-    min-width: 250px;
+    width: 300px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: rgb(62, 41, 106);
-    line-break: break-all;
-    word-break: break-all;
+    overflow-wrap:break-word;
     gap: 15px;
     font-size: 0.8rem;
     cursor: pointer;
@@ -256,6 +255,7 @@
 }
 
 .prjct-crd a p {
+    
     width: max-content;
     border-radius: 15px;
 
@@ -274,6 +274,7 @@
 }
 
 .prjct-info-box {
+    overflow-wrap:break-word;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -329,6 +330,7 @@
     padding: 5px 20px;
     border-radius: 10px;
     background-color: black;
+    overflow-wrap:break-word;
 }
 
 .education-container {
