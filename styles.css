@@ -294,7 +294,7 @@ section {
 }
 
 .skills-card {
-    padding: 15px;
+    padding: 20px;
     background-color: rgb(11, 11, 11);
     border-radius: 20px;
     display: flex;
@@ -303,7 +303,12 @@ section {
     gap: 10px;
     color: rgb(143, 143, 254);
 }
-
+.skills-card p{
+    box-shadow: 0px 0px 3px ;
+    padding: 5px 20px ;
+    border-radius: 10px;
+    cursor: pointer;
+}
 .skill-ctgry {
     font-size: 1.2rem;
     text-align: center;
@@ -319,6 +324,14 @@ section {
 .skills-card ul li {
     list-style-type: circle;
     margin-left: 20px;
+    box-shadow: 0px 0px 3px rgb(252, 205, 205);
+    padding: 5px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.skills-card ul li:hover{
+    background-color: rgb(251, 244, 146);
+    color: rgb(11, 11, 11);
 }
 
 .projects-container {
@@ -354,12 +367,17 @@ section {
     color: rgb(254, 196, 196);
     background-color: black;
     padding: 10px;
+    width: max-content;
+    align-self: center;
+    transition: all 0.3s ease;
 
 }
-
+.prjct-crd a:hover{
+    transform: scale(1.1);
+}
 
 .prjct-crd a p {
-
+    width: max-content;
     border-radius: 15px;
 
 
@@ -420,6 +438,16 @@ section {
 
 .cmpny-tle {
     color: rgb(253, 173, 173);
+    box-shadow: 0px 0px 3px ;
+    padding: 5px 20px;
+    border-radius: 10px;
+    background-color: black;
+}
+.exprnc-info{
+    box-shadow: 0px 0px 3px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    background-color: black;
 }
 
 .education-container {
@@ -445,6 +473,19 @@ section {
     color: rgb(228, 173, 105);
 
 }
+.edcsn-card p{
+    box-shadow: 0px 0px 3px rgb(255, 224, 138);
+    padding: 5px 20px;
+    width: max-content;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: all 0.3s ease;
+
+}
+.edcsn-card p:hover{
+    background-color: aquamarine;
+    color: black;
+}
 
 .certification-container {
     display: flex;
@@ -468,8 +509,18 @@ section {
     font-style: italic;
     color: rgb(189, 155, 253);
     border-radius: 15px;
+    cursor: pointer;
 }
 
+.certificate-card p{
+    box-shadow: 0px 0px 5px;
+    padding: 5px 10px;
+    width: max-content;
+    transition: all 0.3s ease;
+}
+.certificate-card p:hover{
+    transform: scale(1.02);
+}
 
 
 .achivements-container {
