@@ -349,7 +349,7 @@
     align-items: center;
     gap: 8px;
     padding: 20px;
-    width: 200px;
+    width: max-content;
     background-color: black;
     color: rgb(228, 173, 105);
 
