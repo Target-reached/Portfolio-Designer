@@ -694,11 +694,11 @@ function educationCardCreator(userEducation) {
     const educationCard = document.createElement("div");
     educationCard.className = 'edcsn-card';
     const degreeName = document.createElement("p");
-    degreeName.textContent ='Degree Type: '+ userEducation.degree_type;
+    degreeName.textContent ='Degree Name : '+ userEducation.degree_type;
     const collegeName = document.createElement("p");
-    collegeName.textContent = 'College name : '+userEducation.college_name;
+    collegeName.textContent = 'College Name : '+userEducation.college_name;
     const cgpa = document.createElement("p");
-    cgpa.textContent ='CGPA or Points : '+userEducation.cgpa;
+    cgpa.textContent ='Secured CGPA : '+userEducation.cgpa;
 
     educationCard.append(degreeName, collegeName, cgpa);
 
