@@ -371,9 +371,9 @@ document.addEventListener("DOMContentLoaded", () => {
             const card = doc.createElement("div");
             card.className = "edcsn-card";
 
-            appendTextElement(card, "p", "", item.degree_type);
-            appendTextElement(card, "p", "", item.college_name);
-            appendTextElement(card, "p", "", item.cgpa);
+            appendTextElement(card, "p", "","Degree Name : "+item.degree_type);
+            appendTextElement(card, "p", "","College Name :"+item.college_name);
+            appendTextElement(card, "p", "", "Secured CGPA : "+tem.cgpa);
 
             container.append(card);
         });
