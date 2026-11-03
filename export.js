@@ -373,7 +373,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             appendTextElement(card, "p", "","Degree Name : "+item.degree_type);
             appendTextElement(card, "p", "","College Name :"+item.college_name);
-            appendTextElement(card, "p", "", "Secured CGPA : "+tem.cgpa);
+            appendTextElement(card, "p", "", "Secured CGPA : "+item.cgpa);
 
             container.append(card);
         });
