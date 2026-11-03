@@ -508,7 +508,7 @@ section {
 }
 
 .certificate-card {
-    min-width: 250px;
+    width:300px;
     background-color: rgb(8, 8, 8);
     height: 150px;
     display: flex;
