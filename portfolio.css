@@ -6,9 +6,6 @@
     box-sizing: border-box;
 
 }
-p{
-    overflow-wrap:break-word;
-}
 *::-webkit-scrollbar {
     display: none;
 }
@@ -450,7 +447,14 @@ p{
     justify-content: space-around;
     box-shadow: 0px 0px 6px rgb(255, 255, 136);
 }
-
+.skills-container,
+.projects-container,
+.experience-container,
+.education-container,
+.certification-container,
+.achivements-container {
+    overflow-wrap: break-word;
+}
 
 @media screen and (min-width:427px) and (max-width:787px) {
     .portfolio-box {
