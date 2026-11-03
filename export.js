@@ -354,7 +354,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             appendTextElement(
                 card, "p", "",
-                [item.start_date, item.end_date].filter(Boolean).join(" – ")
+                [item.start_date, item.end_date].filter(Boolean).join(" to ")
             );
 
             container.append(card);
